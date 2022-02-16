@@ -16,7 +16,9 @@
     <!-- Header and Title -->
     <header>
         <div class="mt-3">
-            <h1 class="text-center text-warning">Financial Calculator Master</h1>
+            <div class="text-center text-danger">
+                <h1>💰Financial Calculator Master💰</h1>
+            </div>
         </div>
     </header>
     <main class="container mt-5">
@@ -29,18 +31,25 @@
             <div class="col-lg-5 col-md-12 income-bg-color py-3">
                 <div class="text-center">
                     <h3>Income</h3>
-                    <p>Income: <input id="income-input" class="input-bg-color" type="number"></p>
+                    <p>Income: <input id="income-input" class="input-bg-color" type="number"
+                            placeholder="Enter your Income"></p>
                     <h3>Expenses</h3>
-                    <p>Food: <input id="food-input" class="input-bg-color" type="number"></p>
-                    <p>Rent: <input id="rent-input" class="input-bg-color" type="number"></p>
-                    <p>Cloths: <input id="cloths-input" class="input-bg-color" type="number"></p>
+                    <p>Food: <input id="food-input" class="input-bg-color" type="number"
+                            placeholder="Enter your Food Cost"></p>
+                    <p>Rent: <input id="rent-input" class="input-bg-color" type="number"
+                            placeholder="Enter your rent cost"></p>
+                    <p>Cloths: <input id="cloths-input" class="input-bg-color" type="number"
+                            placeholder="Enter your cloths Cost"></p>
                     <button id="calculate-button" class="btn btn-primary px-4">Calculate</button>
+                    <!-- Error Message -->
                     <p id="notify-fail" class="notify">❌ Enter a positive Number, Please try again</p>
                     <p id="balance-fail" class="notify">❌ Your income is very low. So increase your income.</p>
                     <h5 class="my-3">Total Expenses: <span id="expenses-balance">0</span> </h5>
                     <h5>Balance: <span id="total-balance">0</span> </h5>
                     <p>Save: <input id="save-input" class="save-input" type="number"> <span>% </span><button
                             id="save-balance" class="btn btn-primary px-5">Save</button>
+                        <!-- Error Message -->
+                    <p id="save-error" class="notify">❌ Please Enter Positive Value.</p>
                     <p id="save-fail" class="notify">❌ Save Balance is greater than your Main Balance.</p>
                     <p id="balance-fail" class="notify">❌ Your income is very low. So increase your income.</p>
                     <h5 class="my-3">Saving Ammount: <span id="saving-balance">0</span> </h5>

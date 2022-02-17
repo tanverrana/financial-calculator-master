@@ -18,19 +18,19 @@ function calculateTotal() {
     if (income < 0) {
         //alert("please enter a positive number");
         failError.style.display = "block";
-        alert("Please enter a positive number in your Food field.")
+        alert("Please Enter a positive number in your Food field.")
     }
     else if (food < 0) {
         failError.style.display = "block";
-        alert("Please enter a positive number in your Food field.")
+        alert("Please Enter a positive number in your Food field.")
     }
     else if (rent < 0) {
         failError.style.display = "block";
-        alert("Please enter a positive number in your Rent field.")
+        alert("Please Enter a positive number in your Rent field.")
     }
     else if (cloths < 0) {
         failError.style.display = "block";
-        alert("Please enter a positive number in your Cloths field.")
+        alert("Please Enter a positive number in your Cloths field.")
     }
     else {
         const totalExpense = food + rent + cloths;

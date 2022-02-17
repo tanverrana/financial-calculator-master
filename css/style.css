@@ -1,3 +1,4 @@
+/* Input Background Color change and size */
 .input-bg-color{
     background-color: #DCDCDC;
     border: #DCDCDC;
@@ -12,6 +13,7 @@
 .income-bg-color{
     background-color: #F8F8F8;
 }
+/* Erro Message Design */
 .notify {
     color: #fff;
     text-align: center;
